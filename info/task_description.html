@@ -1,18 +1,20 @@
 <!-- Describe task in general -->
 
 <p>
-    {{ENUNCIADO}}
+    Receba uma lista de listas, onde cada sublista contém o título e o autor de um livro. Transforme essa lista em um dicionário de biblioteca com cada livro representado como um dicionário aninhado, identificados por chaves sequenciais como 'livro1', 'livro2', etc. Printe o dicionário da biblioteca.
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> {{ENTRADA}}
+    <strong>Entrada </strong> Uma lista de listas, cada sublista contendo o título e o autor de um livro.
+
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> O dicionário da biblioteca.
+
 </p>
 
 
@@ -28,7 +30,10 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    criar_biblioteca([['1984', 'George Orwell'], ['A Revolução dos Bichos', 'George Orwell']]) >> {
+    'livro1': {'titulo': '1984', 'autor': 'George Orwell'},
+    'livro2': {'titulo': 'A Revolução dos Bichos', 'autor': 'George Orwell'}
+}
 </pre>
 {% endif %}
 </div>
