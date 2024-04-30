@@ -11,7 +11,7 @@ Each test is a dict with
 TESTS = {
     "Basics": [
     {
-        "input": [["The Great Gatsby", "F. Scott Fitzgerald"], ["The Catcher in the Rye", "J.D. Salinger"], ["1984", "George Orwell"]],
+        "input": [[["The Great Gatsby", "F. Scott Fitzgerald"], ["The Catcher in the Rye", "J.D. Salinger"], ["1984", "George Orwell"]]],
         "answer": {
             "livro1": {"titulo": "The Great Gatsby", "autor": "F. Scott Fitzgerald"},
             "livro2": {"titulo": "The Catcher in the Rye", "autor": "J.D. Salinger"},
