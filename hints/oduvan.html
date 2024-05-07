@@ -2,12 +2,31 @@
  <div class="question-answer">
   <div class="question">
    <p>
-    Como posso usar dar nome a livros numerados de forma dinâmica em um dicionário?
+    Como posso adicionar esses livros usando o for?
    </p>
   </div>
   <div class="answer">
    <p>
-    Para nomear livros numerados dinamicamente em um dicionário usando Python, você pode empregar f-strings, que permitem a inserção de variáveis diretamente dentro de strings. </p><p>Você pode criar chaves como 'livro1', 'livro2', etc., incluindo uma variável na f-string, como em chave = f'livro{i}'.</p><p>Dica: use a função enumerate().
+    No Python, ao iterar sobre uma lista de tuplas usando o loop for, cada tupla pode ser descompactada automaticamente em variáveis separadas, tornando a atribuição de valores a um dicionário mais fácil.
+   </p>
+         <pre class="brush: python">
+lista_livros = [["The Great Gatsby", "F. Scott Fitzgerald"], ["The Catcher in the Rye", "J.D. Salinger"], ["1984", "George Orwell"]]
+biblioteca = {}
+for (titulo, autor) in lista_livros:
+    biblioteca[chave] = {'titulo': titulo, 'autor': autor}
+        </pre>
+  </div>
+ </div>
+ <div class="question-answer">
+  <div class="question">
+   <p>
+    Certo, mas ainda preciso criar as chaves de cada livro e numerá-las. Como posso fazer isso?
+   </p>
+  </div>
+  <div class="answer">
+   <p>
+    Para nomear livros numerados dinamicamente em um dicionário usando Python, você pode empregar f-strings, que permitem a inserção de variáveis diretamente dentro de strings. </p><p>Você pode criar chaves como 'livro1', 'livro2', etc., incluindo uma variável na f-string, como em:          <pre class="brush: python">
+chave = f'livro{i}'</pre>.</p><p>Dica: use a função enumerate() ou crie e incremente uma variável auxiliar 'i'.
    </p>
   </div>
  </div>
